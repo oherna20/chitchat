@@ -2,7 +2,7 @@
     <div
     @click.stop="copyMessage"
     class="container flex mx-auto my-4 transition transform rounded-full cursor-pointer hover:scale-105"
-    :class="isUser ? 'bg-green-800' : 'bg-gray-700'"
+    :class="isUser ? 'bg-pink-800' : 'bg-indigo-400'"
   >
     <div>
     <img
@@ -13,7 +13,7 @@
       </div>
       <div class="flex flex-grow">
         <div
-        class="flex items-center justify-between flex-grow mx-4 text-xl font-thin text-purple-200"
+        class="flex items-center justify-between flex-grow mx-4 text-xl font-thin text-indigo-300"
         >
         <p>{{ message.text }}</p>
         <p class="text-sm italic">{{ message.userName }}</p>        </div>
@@ -22,7 +22,7 @@
     <transition @leave="(el, done) => motions.notification.leave(done)">
         <div
           v-motion-pop="'notification'"
-          class="fixed z-10 px-8 py-4 bg-yellow-300 rounded-full bottom-16 right-4"
+          class="fixed z-10 px-8 py-4 bg-pink-800 rounded-full bottom-16 right-4"
           v-if="copied"
         >
           <p class="text-yellow-900">Message Copied!</p>

@@ -8,8 +8,8 @@
     class="flex-grow text-xl font-thin focus:outline-none"
     @change="send"
   />
-  <button class="px-8 bg-yellow-300 focus:outline-none" @click="send">
-    <mdi:send class="text-yellow-900" />
+  <button class="px-8 bg-indigo-900 focus:outline-none" @click="send">
+    <akar-icons:send class="text-indigo-400" />
 </button>
     </div>
   </template>
