@@ -1,6 +1,8 @@
 <template>
-    <div class="bg-purple-900 text-coolGray-300 py-6">
-      <div class="container mx-auto flex justify-between items-center">
+    <div
+    class="fixed top-0 left-0 right-0 bg-purple-900 text-coolGray-300 py-6 z-10"
+  >
+        <div class="container mx-auto flex justify-between items-center">
         <div class="brand flex space-x-2 text-3xl">
           <mdi:message-processing-outline class="text-yellow-300" />
           <h1 class="font-thin">
